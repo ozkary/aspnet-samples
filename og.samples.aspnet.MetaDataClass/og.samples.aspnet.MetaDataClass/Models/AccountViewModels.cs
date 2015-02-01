@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace og.samples.aspnet.MetaDataClass.Models
+namespace og.samples.aspnet.Demo.Models
 {
     public class ExternalLoginConfirmationViewModel
     {

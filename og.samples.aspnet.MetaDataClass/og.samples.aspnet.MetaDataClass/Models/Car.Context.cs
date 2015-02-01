@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace og.samples.aspnet.MetaDataClass.Models
+namespace og.samples.aspnet.Demo.Models
 {
     using System;
     using System.Data.Entity;

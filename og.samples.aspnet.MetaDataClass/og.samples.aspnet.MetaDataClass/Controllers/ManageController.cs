@@ -6,9 +6,9 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using og.samples.aspnet.MetaDataClass.Models;
+using og.samples.aspnet.Demo.Models;
 
-namespace og.samples.aspnet.MetaDataClass.Controllers
+namespace og.samples.aspnet.Demo.Controllers
 {
     [Authorize]
     public class ManageController : Controller

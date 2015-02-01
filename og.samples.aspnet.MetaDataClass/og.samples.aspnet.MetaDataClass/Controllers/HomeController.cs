@@ -1,10 +1,20 @@
-﻿using System;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="HomeController.cs" company="ozkary.com">
+//   Copyright (c) under http://opensource.org/licenses/MIT
+// </copyright>
+// <summary>
+//   asp.net project samples for the ozkary.com blog
+// <remarks>
+//  http://ozkary.com
+// </remarks>
+//
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace og.samples.aspnet.MetaDataClass.Controllers
+namespace og.samples.aspnet.Demo.Controllers
 {
     public class HomeController : Controller
     {
@@ -26,5 +36,6 @@ namespace og.samples.aspnet.MetaDataClass.Controllers
 
             return View();
         }
+        
     }
 }

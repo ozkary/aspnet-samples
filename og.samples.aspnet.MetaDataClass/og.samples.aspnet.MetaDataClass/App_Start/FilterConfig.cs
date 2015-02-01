@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace og.samples.aspnet.MetaDataClass
+namespace og.samples.aspnet.Demo
 {
     public class FilterConfig
     {

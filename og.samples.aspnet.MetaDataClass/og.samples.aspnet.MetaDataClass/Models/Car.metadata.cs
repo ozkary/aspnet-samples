@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace og.samples.aspnet.MetaDataClass.Models
+namespace og.samples.aspnet.Demo.Models
 {
     /// <summary>
     /// partial class definition to associate the ORM generated class

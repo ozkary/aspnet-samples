@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(og.samples.aspnet.MetaDataClass.Startup))]
-namespace og.samples.aspnet.MetaDataClass
+[assembly: OwinStartupAttribute(typeof(og.samples.aspnet.Demo.Startup))]
+namespace og.samples.aspnet.Demo
 {
     public partial class Startup
     {

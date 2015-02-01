@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "og.samples.aspnet.MetaDataClass", "og.samples.aspnet.MetaDataClass\og.samples.aspnet.MetaDataClass\og.samples.aspnet.MetaDataClass.csproj", "{B76635F6-1180-462D-BA9E-299D4A902469}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "og.samples.aspnet.Demo", "og.samples.aspnet.MetaDataClass\og.samples.aspnet.MetaDataClass\og.samples.aspnet.Demo.csproj", "{B76635F6-1180-462D-BA9E-299D4A902469}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "og.samples.library.EnumTypes", "og.samples.library.EnumTypes\og.samples.library.EnumTypes.csproj", "{C7BECF02-6169-43D7-A45D-03BFCB6CF43C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B76635F6-1180-462D-BA9E-299D4A902469}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B76635F6-1180-462D-BA9E-299D4A902469}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B76635F6-1180-462D-BA9E-299D4A902469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7BECF02-6169-43D7-A45D-03BFCB6CF43C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7BECF02-6169-43D7-A45D-03BFCB6CF43C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7BECF02-6169-43D7-A45D-03BFCB6CF43C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7BECF02-6169-43D7-A45D-03BFCB6CF43C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

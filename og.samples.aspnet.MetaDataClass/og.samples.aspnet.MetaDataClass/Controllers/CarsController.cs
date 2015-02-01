@@ -6,9 +6,9 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using og.samples.aspnet.MetaDataClass.Models;
+using og.samples.aspnet.Demo.Models;
 
-namespace og.samples.aspnet.MetaDataClass.Controllers
+namespace og.samples.aspnet.Demo.Controllers
 {
     public class CarsController : Controller
     {

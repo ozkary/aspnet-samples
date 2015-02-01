@@ -5,9 +5,9 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using og.samples.aspnet.MetaDataClass.Models;
+using og.samples.aspnet.Demo.Models;
 
-namespace og.samples.aspnet.MetaDataClass
+namespace og.samples.aspnet.Demo
 {
     public partial class Startup
     {

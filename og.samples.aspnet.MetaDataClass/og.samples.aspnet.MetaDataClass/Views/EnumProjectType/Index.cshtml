@@ -1,0 +1,23 @@
+﻿@model og.samples.library.EnumTypes.Model.ProjectTypeList
+
+@{
+    ViewBag.Title = "Self-Describing Enum Type";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<table class="table">
+    <tr>
+        <th>Id</th><th>Name</th><th>Description</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>@item.Id</td>
+        <td>@item.Tag</td>
+        <td>@item.Description</td>
+
+    </tr>
+}
+
+</table>
