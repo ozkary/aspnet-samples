@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+<div ng-app="appContact">
+    <div ng-controller="app.ctrl.contact as ctrl">
+        <form method="post" id="contact" novalidate name="contactForm">
+            @Html.AntiForgeryToken()
+            <fieldset class="padding">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" ng-class="{'has-error' : contactForm.name.$invalid}">
+                        <label>Name: <span>*</span></label>
+                        <input class="form-control input-required" ng-model="contact.name" id="name" name="name" type="text" value="" required="" placeholder="full name" ng-minlength="3" ng-maxlength="60">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" ng-class="{'has-error' : contactForm.email.$invalid}">
+                        <label>Email: <span>*</span></label>
+                        <input class="form-control input-required" ng-model="contact.email" type="email" id="email" name="email" value="" required="" placeholder="email" ng-minlength="5" ng-maxlength="60">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" ng-class="{'has-error' : contactForm.message.$invalid}">
+                        <label>Message: <span>*</span></label>
+                        <textarea class="form-control input-required" name="message" id="text" ng-model="contact.message" name="text" rows="6" cols="40" required="" ng-maxlength="180"></textarea>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
+                        <label>Token: <input type="checkbox" class="input-control"  ng-model="contact.sendToken" checked="checked" /></label>
+                        <textarea class="form-control" readonly name="token" id="text" ng-model="contact.token" name="text" rows="6" cols="40" ng-maxlength="180"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+            <button class="btn btn-primary btn-default submit" type="button" ng-click="ctrl.send()" ng-disabled="contactForm.$invalid"><i class="fa fa-envelope">&nbsp;</i> Send</button>
+            <div class="success alert-success alert" style="display:none">Your message has been sent successfully.</div>
+            <div class="error alert-error alert" style="display:none">E-mail must be valid and message must be longer than 100 characters.</div>
+            <div class="clearfix">
+            </div>
+        </form>
+    </div>
+<script type="text/ng-template" id="contact-ok">
+    
+    <div class=" modal-header">
+        <h3 class="modal-title"><i class="fa fa-check-circle text-success"></i> {{app.contactTitle}}</h3>
+    </div>
+    <div class="modal-body">
+        {{message}}
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="$close()">{{app.btnOk}}</button>
+    </div>    
+</script>
+<script type="text/ng-template" id="contact-err">
+    
+    <div class="modal-header">
+        <h3 class="modal-title"><i class="fa fa-times-circle text-danger "></i> {{ app.contactTitle}}</h3>
+    </div>
+    <div class="modal-body">
+        {{message}}
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="$close()">{{app.btnOk}}</button>
+    </div>
+      
+</script>
+<script type="text/ng-template" id="loader-template">
+    <div class="modal-body text-center" id="loader" ng-show="true">
+        <i class="fa fa-spin fa-spinner fa-2x"></i>
+    </div>
+</script>
+</div>
+@section Scripts{
+    <script src="~/Scripts/app/contact/og.contact.min.js"></script>
+
+}
