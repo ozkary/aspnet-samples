@@ -25,10 +25,9 @@
                 @Html.ActionLink("ozkary.com - Demos Portal", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">                  
-                    <li>@Html.ActionLink("About", "About", "Home")</li>                                        
-                </ul>
-                <!--Html.Partial("_LoginPartial")-->
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                </ul>               
             </div>
         </div>
     </div>
@@ -39,9 +38,12 @@
             <p>&copy; @DateTime.Now.Year - @ViewBag.Sample</p>
         </footer>
     </div>
-
+    <!--server side bundling-->
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+
+    <!--pre-bundling of libs-->
+    <script src="~/Scripts/angularjs.min.js"></script>   
     @RenderSection("scripts", required: false)
 </body>
 </html>
